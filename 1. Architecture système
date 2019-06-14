@@ -1,4 +1,4 @@
-// Gestion manuelle des modules linux  ---->   commandes lsmod , rmmod , modprobe
+// Gestion manuelle des modules du kernel  ---->   commandes lsmod , rmmod , modprobe
 lsmod | grep psmouse      <===>      modprobe -r psmouse   
  psmouse         147456  0    // psmouse = ps de la sourie
 rmmod posmouse
