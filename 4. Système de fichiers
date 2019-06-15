@@ -2,3 +2,6 @@
 Les FS journalisés enregistrent les modifications dans un journal avant de les effectuer sur les fichiers eux-mêmes.
 Les FS à snapshot, ou instantanés, offrent la possibilité d'enregistrer l'état du système de fichiers à un instant donné.
 // ext2 n'est pas journalisée
+
+// La partition SWAP ne contient pas de FS   ----> c'est une extension de mémoire pour Linux  ---> type code 0x82
+----> création & activation ------->  mkswap    swapon
