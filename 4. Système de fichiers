@@ -5,3 +5,6 @@ Les FS à snapshot, ou instantanés, offrent la possibilité d'enregistrer l'ét
 
 // La partition SWAP ne contient pas de FS   ----> c'est une extension de mémoire pour Linux  ---> type code 0x82
 ----> création & activation ------->  mkswap    swapon
+
+// Infos sur FS : 
+  dumpe2fs -h /dev/sda6    ,     xfs_info /dev/sda6           ,     xfs_metadump
