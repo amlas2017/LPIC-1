@@ -1,3 +1,12 @@
+****************************************************PROCESSUS & THREADS  *********************************************************
+Un processus est une instance d'un programme en cours d'exécution. Il contient les instructions du programme chargées en mémoire. 
+Il possède un ou plusieurs threads exécutant des tâches spécifiques. 
+
+Un processus peut contenir un ou plusieurs thread (applications dites multi-threadées) s'exécutant en quasi-simultanéité ou 
+simultanément sur les processeurs multi-coeurs. 
+A la différence des processus, les threads partage le même espace mémoire protégé, les mêmes ressources et le même espace mémoire.
+**********************************************************************************************************************************
+
 // Gestion manuelle des modules du kernel  ---->   commandes lsmod , rmmod , modprobe
 lsmod | grep psmouse      <===>      modprobe -r psmouse   
  psmouse         147456  0    // psmouse = ps de la sourie
@@ -9,3 +18,5 @@ modprobe psmouse   // charger le module
 // losetup -----> permet de gérer les périphériques de type loop
        losetup -a  -----> Liste les périphériques utilisés (comme: /dev/loop5)
        losetup -f ----> donne le numéro du prochain périphérique utilisable (dans notre exemple, le « 6 »).
+
+
