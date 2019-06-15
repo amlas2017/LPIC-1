@@ -1,1 +1,4 @@
+// File System ----> journalisé , non journalisé , snapshot
+Les FS journalisés enregistrent les modifications dans un journal avant de les effectuer sur les fichiers eux-mêmes.
+Les FS à snapshot, ou instantanés, offrent la possibilité d'enregistrer l'état du système de fichiers à un instant donné.
 // ext2 n'est pas journalisée
