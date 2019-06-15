@@ -7,6 +7,8 @@ simultanément sur les processeurs multi-coeurs.
 A la différence des processus, les threads partage le même espace mémoire protégé, les mêmes ressources et le même espace mémoire.
 **********************************************************************************************************************************
 
+// La modularité du kernel ----> momolotique et modulaire ---> ajouter / enlever des modules. 
+
 // Gestion manuelle des modules du kernel  ---->   commandes lsmod , rmmod , modprobe
 lsmod | grep psmouse      <===>      modprobe -r psmouse   
  psmouse         147456  0    // psmouse = ps de la sourie
