@@ -6,3 +6,4 @@ modprobe psmouse   // charger le module
 
 // utilitaires pour gestion de disques et partitions: cfdisk, gparted, fdisk / gdisk
 
+// losetup -----> permet de gérer les périphériques de type loop
