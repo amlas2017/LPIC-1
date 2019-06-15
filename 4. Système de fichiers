@@ -8,3 +8,6 @@ Les FS à snapshot, ou instantanés, offrent la possibilité d'enregistrer l'ét
 
 // Infos sur FS : 
   dumpe2fs -h /dev/sda6    ,     xfs_info /dev/sda6           ,     xfs_metadump
+ 
+// FS  ext
+tune2fs est une commandes très utilisée pour modifier les paramètres des système de fichiers ext2, ext3 et ext4 
