@@ -1,1 +1,3 @@
 // newgrp   --->  changer le groupe principal au groupe secondaire
+
+// La définition du groupe primaire est dans /etc/passwd   et la déf du groupe seconadire dans /etc/group.
