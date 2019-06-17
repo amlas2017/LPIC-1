@@ -1,3 +1,5 @@
 // newgrp   --->  changer le groupe principal au groupe secondaire
 
 // La définition du groupe primaire est dans /etc/passwd   et la déf du groupe seconadire dans /etc/group.
+
+// chmod 744 fichier    ----> 777 = 1x4+1x2+1x1 1x4+0x2+0x1 1x4+0x2+0x1  et la base est {4=2^2 , 2=2^1 , 1=2^0}. 
