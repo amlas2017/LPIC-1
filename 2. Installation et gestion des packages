@@ -1,7 +1,20 @@
 // initrd (Initial RamDisk) est une image d'un système d'exploitation minimal initialisé au démarrage du système.
 
-// Les différentes phases d’un démarrage Linux :
-     - Chargement du noyau Linux
-     - Chargement de l’initrd (passé alors en paramètre au noyau)
-     - Lancement du script linuxrc, chargeant les modules nécessaires au démarrage
-     - Lancement de la tâche init, sur le périphérique sélectionné
+//   0 - Lire le BIOS
+     1 - Chargement du MBR (Master Boot Record) par le Bios. C'est lui qui contient la première partie de GRUB (stage 1).
+     2 - Lancement du code chargé par le MBR qui charge la suite du programme GRUB (stage 2)
+     3 - Chargement du noyau Linux en mémoire (avec le système de fichier virtuel initrd correspondant)
+     4 - Lancement de Linux
+     5 - Linux crée le premier processus, init
+     6 - init lit sa configuration dans le fichier /etc/inittab (version habituelle) ou dans le répertoire
+          /etc/init.d (version sous ubuntu) qui lui donne les informations sur les processus à créer.
+
+             BIOS ----> MBR ----> GRUB ---> KERNEL ----> INIT ----> RUN LEVEL
+                                                     ----> SYSTEMD ---->
+RUN LEVEL = niveau d'execution , est un état dans lequel se trouve Unix/linux.      
+Le comportement du peocessus init et des RUN LEVELs est défini dans /etc/inittab.
+Dans systemd, il n'ya pas de /etc/inittab.
+
+// Un service = un pu plusieurs démon(s) = ensemble de processus qui s'executent en arrière-plan,et donc ne dépond d'aucun user, et
+ donc sont fils du processus init.
+                                    
