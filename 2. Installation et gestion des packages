@@ -11,8 +11,8 @@
 
              BIOS ----> MBR ----> GRUB ---> KERNEL ----> INIT ----> RUN LEVEL
                                                      ----> SYSTEMD ---->
-RUN LEVEL = niveau d'execution , est un état dans lequel se trouve Unix/linux.      
-Le comportement du peocessus init et des RUN LEVELs est défini dans /etc/inittab.
+RUNLEVEL = niveau d'execution , est un état dans lequel se trouve Unix/linux.      
+Le comportement du peocessus init et des RUNLEVELs est défini dans /etc/inittab.
 Dans systemd, il n'ya pas de /etc/inittab.
 
 // Un service = un pu plusieurs démon(s) = ensemble de processus qui s'executent en arrière-plan,et donc ne dépond d'aucun user, et
