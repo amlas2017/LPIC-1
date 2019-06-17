@@ -1,1 +1,2 @@
-//
+// Consulter les traces du sytème avec dmesg
+  dmesg | grep CPU
