@@ -1,2 +1,4 @@
 // Consulter les traces du sytème avec dmesg
   dmesg | grep CPU
+  
+// le role de init = démarre et arrete les services du système
