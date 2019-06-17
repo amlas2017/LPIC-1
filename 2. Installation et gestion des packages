@@ -1,1 +1,7 @@
 // initrd (Initial RamDisk) est une image d'un système d'exploitation minimal initialisé au démarrage du système.
+
+// Les différentes phases d’un démarrage Linux :
+     - Chargement du noyau Linux
+     - Chargement de l’initrd (passé alors en paramètre au noyau)
+     - Lancement du script linuxrc, chargeant les modules nécessaires au démarrage
+     - Lancement de la tâche init, sur le périphérique sélectionné
