@@ -2,3 +2,6 @@
   dmesg | grep CPU
   
 // le role de init = démarre et arrete les services du système
+ 
+// Arreter le service ssh avec systemd ----> sytemctl stop ssh.service   ou   initctl ssh stop
+   Arreter le service ssh avec system V ----> service sshd stop     ou   chkconfig sshd off 
