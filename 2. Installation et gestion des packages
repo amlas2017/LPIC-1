@@ -45,7 +45,7 @@ Le noyau vérifie la présence d'un initramfs et, s'il le trouve, le monte sur /
 // systemctl list-units --type=service
 // $ systemctl get-default  ----> multi-user.target ( niveau d'execution ou runlevel)
   --- les targets sont dans: /etc/systemd/system/
-// Pour changer la target à graphical ---->   $ systemctl get-default graphical.target
+// Pour changer la target à graphical ---->   $ systemctl set-default graphical.target
   
 
 
