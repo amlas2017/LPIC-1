@@ -1,3 +1,12 @@
+// RPM
+- Installer ou mettre à jour un paquet -----> rpm -Uhv *.rpm
+- Désinstaller un paquet ----> rpm -e *  (sans '.rpm')
+- Rechercher si le paquet toto est installé rpm -q toto  (nom complet, sans '.rpm')
+- Liste de tous les paquets installés ----> rpm -qa
+- Recherche dans tous les paquets installés si mysql est présent   ----> rpm -qa | grep mysql
+- Description du paquet 'git' installé  ----> rpm -qi git
+- Connaitre la date d'installation des rpm installés  ---->  rpm -qa --last
+
 // initrd (Initial RamDisk) est une image d'un système d'exploitation minimal initialisé au démarrage du système.
 
 //   0 - Lire le BIOS
