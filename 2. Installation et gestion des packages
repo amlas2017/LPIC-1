@@ -49,5 +49,6 @@ systemd n'est pas seulement un gestionnaire de services ----> il est aussi utili
   --- les targets sont dans: /etc/systemd/system/
 // Pour changer la target à graphical ---->   $ systemctl set-default graphical.target
   
-
+// cgroups (control groups) est une fonctionnalité du noyau Linux pour limiter, compter et isoler l'utilisation des 
+   ressources (processeur, mémoire, utilisation disque, etc.). 
 
