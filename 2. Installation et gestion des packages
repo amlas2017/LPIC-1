@@ -36,11 +36,13 @@ Le noyau vérifie la présence d'un initramfs et, s'il le trouve, le monte sur /
 - Assure l'initialisation des services
 - Gère les démons linux : start, stop, activate, desactivate
 - Il démarre les services en PARALLELE
-- Il suit les  services avec les groupes de controle (gestion des ressources)
+- Il suit les  services avec les groupes de controle CGROUPS (gestion des ressources)
 - Gère la journalisation et peut transmettre les journaux à Syslog
 - La configuration des noms d'hotes, des montages de FS
 - Les sessions utilisateurs et gère les ressources des users avec cgroups
 - gère les VM et conteneurs avec cgroups et libvirt
+
+systemd n'est pas seulement un gestionnaire de services ----> il est aussi utilisé pour monter des FS au démarrage de la machine.
 
 // systemctl list-units --type=service
 // $ systemctl get-default  ----> multi-user.target ( niveau d'execution ou runlevel)
