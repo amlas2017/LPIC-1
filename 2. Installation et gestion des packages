@@ -13,8 +13,22 @@
                                                      ----> SYSTEMD ---->
 RUNLEVEL = niveau d'execution , est un état dans lequel se trouve Unix/linux.      
 Le comportement du peocessus init et des RUNLEVELs est défini dans /etc/inittab.
-Dans systemd, il n'ya pas de /etc/inittab.
+-----> Dans systemd, il n'ya pas de /etc/inittab.
 
 // Un service = un pu plusieurs démon(s) = ensemble de processus qui s'executent en arrière-plan,et donc ne dépond d'aucun user, et
  donc sont fils du processus init.
-                                    
+ 
+// Au moment du démarrage, le chargeur de démarrage charge le noyau et l'image initramfs dans la mémoire et démarre le noyau. 
+Le noyau vérifie la présence d'un initramfs et, s'il le trouve, le monte sur / et lance /init.
+***********************************************************************************************************************************
+                                                      SYSTEMD
+***********************************************************************************************************************************
+- Il démarre que 1er processus lancé par le noyau
+- Assure l'initialisation des services
+- Gère les démons linux : start, stop, activate, desactivate
+- Il démarre les services en PARALLELE
+- Il suit les  services avec les groupes de controle (gestion des ressources)
+- Gère la journalisation et peut transmettre les journaux à Syslog
+- La configuration des noms d'hotes, des montages de FS
+- Les sessions utilisateurs et gère les ressources des users avec cgroups
+- gère les VM et conteneurs avec cgroups et libvirt
