@@ -43,3 +43,7 @@ Le noyau vérifie la présence d'un initramfs et, s'il le trouve, le monte sur /
 - gère les VM et conteneurs avec cgroups et libvirt
 
 // systemctl list-units --type=service
+// systemctl get-default  ----> multi-user.target ( niveau d'execution ou runlevel)
+  --- les targets sont dans: /etc/systemd/system/
+
+
