@@ -32,3 +32,5 @@ Le noyau vérifie la présence d'un initramfs et, s'il le trouve, le monte sur /
 - La configuration des noms d'hotes, des montages de FS
 - Les sessions utilisateurs et gère les ressources des users avec cgroups
 - gère les VM et conteneurs avec cgroups et libvirt
+
+// systemctl list-units --type=service
