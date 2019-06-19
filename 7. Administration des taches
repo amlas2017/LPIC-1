@@ -3,3 +3,9 @@
 // La définition du groupe primaire est dans /etc/passwd   et la déf du groupe seconadire dans /etc/group.
 
 // chmod 744 fichier    ----> 777 = 1x4+1x2+1x1 1x4+0x2+0x1 1x4+0x2+0x1  et la base est {4=2^2 , 2=2^1 , 1=2^0}. 
+
+// UMASK -----> Lors de la création d’un fichier, les droits par défaut qui s’y appliquent sont « rw-r--r--». 
+On peut imaginer que par défaut, le fichier est créé par défaut avec les droits « 666 » ou « rw-rw-rw- » mais que l’umask qui
+s’y applique enlève automatiquement certains droits qui sont les droits d’écriture pour le groupe et les autres utilisateurs. 
+Un répertoire quant à lui est créé par défaut avec les droits « 777 », il faut donc calculer l’umask en conséquence car un umask 
+de « 022 » donnera un droit final de « 755 » soit « rw-r---r-- ».
