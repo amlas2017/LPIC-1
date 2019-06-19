@@ -11,3 +11,7 @@ Les FS à snapshot, ou instantanés, offrent la possibilité d'enregistrer l'ét
  
 // FS  ext
 tune2fs est une commandes très utilisée pour modifier les paramètres des système de fichiers ext2, ext3 et ext4 
+
+// procfs
+Sur les systèmes du type Unix, procfs (process file system ou système de fichiers processus) est un pseudo-système de fichiers 
+(pseudo car dynamiquement généré au démarrage1) utilisé pour accéder aux informations du noyau sur les processus. 
