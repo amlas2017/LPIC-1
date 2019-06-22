@@ -21,6 +21,7 @@ init est le parent de tous les processus. Son rôle principal est de créer des 
 le fichier /etc/inittab. Ce dernier décrit l'ensemble des processus qui doivent être lancés au démarrage du système et pendant 
 un fonctionnement normal.Le programme init distingue différents niveaux_exécution (runlevel), chacun pouvant avoir ses propres
 processus à démarrer.
+N.B : le fichier /etc/inittab n'existe plus avec le systemd.
 Un niveau d'exécution est une configuration logicielle du système qui permet à seulement un certain groupe de processus d'exister. 
 Les processus lancés par init pour chacun de ces niveaux d'exécution sont définis dans le fichier /etc/inittab. 
 init peut être dans un des huit niveaux d'exécution : 0–6 et S (alias s). Le niveau d'exécution peut être modifié par un 
