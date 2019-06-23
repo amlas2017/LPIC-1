@@ -1,3 +1,8 @@
+// Variables d'environnements:
+ ---> root peut définir des variables d'environnement dans /etc/profile ou autre fichiers de configuration au niveau du système.
+ ---> les users peuvent définir leurs propres variables d’environnement dans .bashrc ou d’autres fichiers de configuration au 
+ niveau utilisateur (comme vimrc pour vim). Les users n'ont pas les droits d'ecriture sur /etc/profile.
+
 // newgrp   --->  changer le groupe principal au groupe secondaire
 
 // La définition du groupe primaire est dans /etc/passwd   et la déf du groupe seconadire dans /etc/group.
