@@ -1,3 +1,7 @@
+// commande fuser
+fuser permet de retrouver le processus qui utilise un point de montage, un répertoire, un fichier. Elle est très utile lorsque
+vous n’arrivez pas à démonter un FS (avec umount).
+
 // Variables d'environnements:
  ---> root peut définir des variables d'environnement dans /etc/profile ou autre fichiers de configuration au niveau du système.
  ---> les users peuvent définir leurs propres variables d’environnement dans .bashrc ou d’autres fichiers de configuration au 
