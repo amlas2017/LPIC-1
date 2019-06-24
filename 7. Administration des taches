@@ -1,6 +1,7 @@
 // commande fuser
 fuser permet de retrouver le processus qui utilise un point de montage, un répertoire, un fichier. Elle est très utile lorsque
-vous n’arrivez pas à démonter un FS (avec umount).
+vous n’arrivez pas à démonter un FS (avec umount). Cette commande peut etre utilisée pour tuer tous les processus lié à un FS
+automatiquement : fuser -km /point-montage
 
 // Variables d'environnements:
  ---> root peut définir des variables d'environnement dans /etc/profile ou autre fichiers de configuration au niveau du système.
