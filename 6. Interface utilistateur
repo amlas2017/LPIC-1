@@ -1,1 +1,4 @@
-//
+// Commande vmstat
+vmstat permet de générer des rapports sur les statistiques de mémoire virtuelle et sur les informations sur les événements système
+telles que la charge CPU, la pagination, le nombre de changements de contexte, les interruptions de périphérique et les appels 
+système.
