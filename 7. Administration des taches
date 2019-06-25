@@ -19,3 +19,6 @@ On peut imaginer que par défaut, le fichier est créé par défaut avec les dro
 s’y applique enlève automatiquement certains droits qui sont les droits d’écriture pour le groupe et les autres utilisateurs. 
 Un répertoire quant à lui est créé par défaut avec les droits « 777 », il faut donc calculer l’umask en conséquence car un umask 
 de « 022 » donnera un droit final de « 755 » soit « rw-r---r-- ».
+
+// Commande getent
+getent permet d'interroger les utilisateurs du système de gestion en cours( /etc/passwd ou LDAP).
