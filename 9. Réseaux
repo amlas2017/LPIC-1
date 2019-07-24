@@ -1,2 +1,7 @@
 // TCPdump
 TCPdump est un outil pour écouter tous ce qui se passe sur vos interface réseau et permet de capturer les paquets IP.
+tpcdump -D   ---> liste des interfaces
+
+// Outils de surveillance et analyse du traffic TCP/IP : 
+--> netcat ---> scanner les ports et établir des connections : $ nc -vv -i 3 -z -r 127.0.0.1 21 23 80 8080
+( --v verbose, -i intervalle en secondes, -z mode i/O, -r scanner aléatoirement, 21 à 8080 sont des ports à scanner)
