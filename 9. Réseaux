@@ -5,6 +5,6 @@ tpcdump -D   ---> liste des interfaces
 // Outils de surveillance et analyse du traffic TCP/IP : 
 --> netcat ---> scanner les ports et établir des connections : $ nc -vv -i 3 -z -r 127.0.0.1 21 23 80 8080
 ( --v verbose, -i intervalle en secondes, -z mode i/O, -r scanner aléatoirement, 21 à 8080 sont des ports à scanner)
---> nc client/serveur : sur 1er terminal $ nc -l -p 8080 , sur le 2nd $ nc 127.0.0.1 8080 et on échange les messages entre les
-deux terminaux.
+--> nc client/serveur : sur 1er terminal(client) $ nc -l -p 8080 , sur le 2nd (serveur) $ nc 127.0.0.1 8080 et on échange les 
+messages entre les deux terminaux.
 
