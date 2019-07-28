@@ -1,3 +1,16 @@
+******************************************************* SYSTEMD *****************************************************************
+systemctl -t help      ----> liste les unités disponibles sur le système.
+systemctl list-units   ----->   liste toutes les unités présentes sur le système.
+systemctl list-unit-files --type=service --all  -----> tous les services disponibles et leur statut (inactifs aussi).
+systemctl is-active application.service.
+systemctl --failed --type=service
+
+systemd-analyze blame  ---->   lister le temps de démarrage des différents services.
+systemd-cgls
+systemd-cgtop
+
+
+
 *****************************************************  DAEMON  ******************************************************************
 Un daemon (démon) est un processus ou un ensemble de processus qui s'exécute en arrière-plan plutôt que sous le contrôle direct 
 d'un user. un daemon UNIX peut être n'importe quel processus ayant le processus numéro 1 comme parent (init).
