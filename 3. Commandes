@@ -1,3 +1,10 @@
+// La commande chroot (change root)         https://www.linuxtricks.fr/wiki/chrooter-un-systeme-linux
+La commande chroot permet de changer le répertoire racine vers un nouvel emplacement.
+Chroot peut être utilisé dans deux cas :
+ --> En tant que bascule d'environnement pour prendre le contrôle d'une installation Linux depuis un autre système.
+ --> En tant que prison pour empêcher un user de remonter dans l'arborescence pour l'emprisonner dans un répertoire spécifique 
+    (ce qui peut être utilisé avec un serveur FTP pour que les utilisateurs ne remontent pas dans l'arborescence du système).
+
 // la priorité des processus sous Linux avec les commandes: nice et renice.
 On utilise la commande renice pour modifier la priorité d'un processus en cours d'exécution, et la commande nice pour définir la
 priorité d'un processus à son lancement.
