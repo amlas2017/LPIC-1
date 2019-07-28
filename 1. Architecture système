@@ -1,5 +1,8 @@
+*****************************************************  DAEMON  ******************************************************************
 Un daemon (démon) est un processus ou un ensemble de processus qui s'exécute en arrière-plan plutôt que sous le contrôle direct 
-d'un user.
+d'un user. un daemon UNIX peut être n'importe quel processus ayant le processus numéro 1 comme parent (init).
+Les daemons sont souvent démarrés lors du chargement de l'OS, et servent en général à répondre à des requêtes du réseau, 
+à l'activité du matériel ou à d'autres programmes en exécutant certaines tâches.
 
 
 ****************************************************PROCESSUS & THREADS  *********************************************************
