@@ -1,4 +1,17 @@
 ******************************************************* SYSTEMD *****************************************************************
+Le processus init se charge de lancer les services (daemons) et de mettre en place un environnement pour l’utilisateur (graphique, 
+réseau, etc). Sa dernière action consiste généralement à présenter un écran d’authentification, laissant la main à l’utilisateur.
+Un daemon est un processus qui tourne en arrière plan et qui supervise le système ou bien fournit des fonctionnalités à d’autres
+processus.
+Le processus init a un status particulier:
+   --> Il est le tout premier processus appelé par le kernel (PID = 1).
+   --> Il est le parent de tous les processus qui deviennent orphelins.
+   --> Il reste vivant jusqu’à l’arrêt du système.
+A l’arrêt du système, il est chargé de fermer tous les services et de quitter proprement.
+
+
+
+
 systemctl -t help      ----> liste les unités disponibles sur le système.
 systemctl list-units   ----->   liste toutes les unités présentes sur le système.
 systemctl list-unit-files --type=service --all  -----> tous les services disponibles et leur statut (inactifs aussi).
