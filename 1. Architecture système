@@ -8,6 +8,14 @@ Le processus init a un status particulier:
    --> Il est le parent de tous les processus qui deviennent orphelins.
    --> Il reste vivant jusqu’à l’arrêt du système.
 A l’arrêt du système, il est chargé de fermer tous les services et de quitter proprement.
+Il existe différents processus init, dont les plus connus sont:
+   -  SysVinit: processus init historique, hérité de UNIX System V.
+   -  Upstart: sorti en 2006, à l’origine pour Ubuntu.
+   -  Systemd: sorti en 2010.
+Le fonctionnement de systemd diffère complètement de SysVinit et Upstart qui utilisaient principalement des scripts. 
+Systemd permet une parallélisation des lancements des services et une activation à la demande de ceux-ci grâce à l’utilisation de 
+sockets.
+
 
 
 
