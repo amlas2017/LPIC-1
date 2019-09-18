@@ -16,10 +16,19 @@ Le fonctionnement de systemd diffère complètement de SysVinit et Upstart qui u
 Systemd permet une parallélisation des lancements des services et une activation à la demande de ceux-ci grâce à l’utilisation de 
 sockets.
 
+// La commande update-rc  ----> Ubuntu/Debian
+update-rc.d met à jour automatiquement les liens vers les scripts d'initialisation de type Système V  dont  le nom est
+/etc/rcrunlevel.d/NNnom vers les scripts /etc/init.d/name. Ils sont lancés par init quand on change de niveau de fonctionnement 
+et ils sont  généralement utilisés  pour démarrer ou arrêter des services tels que les démons.
+       nano /etc/init.d/mon_script
+       chmod 755 /etc/init.d/mon_script
+       update-rc.d mon_script defaults   -----> pour ajouter
+       update-rc.d -f mon_script remove  -----> pour supprimer
+       
 
 
 
-
+// systemctl
 systemctl -t help      ----> liste les unités disponibles sur le système.
 systemctl list-units   ----->   liste toutes les unités présentes sur le système.
 systemctl list-unit-files --type=service --all  -----> tous les services disponibles et leur statut (inactifs aussi).
